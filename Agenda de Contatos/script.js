@@ -4,7 +4,7 @@ const nomeContato = document.getElementById('nome-contato');
 const telContato = document.getElementById('tel-contato');
 const totalContatos = document.getElementById('total-contatos');
 
-const perfilDefault = '<img src="./assets/images/perfil-default.png" alt="imagem default para perfil">';
+const perfilDefault = '<img src="./images/perfil-default.png" alt="imagem default para perfil">';
 
 let nomes = []
 let url = []
