@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda de Contatos</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main class="container">
+        <header>
+            <img src="./images/logo.png" alt="logotipo da agenda">
+            <h1>Agenda de Contatos</h1>
+        </header>
+
+        <form id="form-agenda">
+            <input type="text" placeholder="Digite a URL da foto" id="foto-contato">
+
+            <input type="text" placeholder="Digite o nome do contato" required id="nome-contato">
+            
+            <input type="number" placeholder="(xx xxxxx-xxxx)" required id="tel-contato" pattern="[0-9]{10,11}">
+
+            <button type="submit">
+                <img src="./images/add.png" alt="ícone de adicionar">
+                Adicionar
+            </button>
+
+            <button type="button" onclick="limparTabela()">
+            <img src="./images/lixeira.png" alt="ícone de uma lixeira">Limpar lista</button>
+        </form>
+
+        <table cellspacing="0">
+            <thead>
+                <tr>
+                    <td>Foto</td>
+                    <td>Nome Contato</td>
+                    <td>Telefone</td>
+                </tr>
+            </thead>
+
+            <tbody>
+
+            </tbody>
+
+            <tfoot>
+                <tr>
+                    <td colspan="2">Total de Contatos</td>
+                    <td id="total-contatos"></td>
+                </tr>
+            </tfoot>
+        </table>
+    </main>
+    
+    <script src="script.js"></script>
+</body>
+</html>
